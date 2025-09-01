@@ -23,7 +23,8 @@ public class JwtAuthenticationHandler implements AuthenticationEntryPoint {
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
 
-        CommonErrorDto dto = new CommonErrorDto(401, "token이 없거나 유효하지 않습니다.");
+        System.out.println("변경사항 테스트");
+        CommonErrorDto dto = new CommonErrorDto(401, "token이 없거나 유효하지 다.");
 
         PrintWriter printWriter = response.getWriter();
         ObjectMapper objectMapper = new ObjectMapper();
